@@ -23,7 +23,7 @@ function getBMIState(BMI) {
   let BMIState;
   if (BMI < 18.5) {
     BMIState = "underweight";
-  } else if (BMI < 25 && BMI >= 18.5) {
+  } else if (BMI < 24.9 && BMI >= 18.5) {
     BMIState = "healthy";
     console.log(BMIState);
   } else if (BMI < 30 && BMI >= 25) {
@@ -48,6 +48,7 @@ function getBMIState(BMI) {
  */
 
 function getBMIStateByAge(BMI, age) {
+  let BMIState;
   if (BMI >= 19 && BMI <= 24 && age >= 19 && age <= 24) {
     BMIState = "healthy";
     console.log(BMIState);
